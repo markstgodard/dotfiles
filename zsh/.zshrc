@@ -106,7 +106,7 @@ export DYLD_LIBRARY_PATH=/Users/mark/Development/tools/instantclient_11_2
 
 
 # after yosemite upgrade aliased to mvim -v ????
-unalias vim
+# unalias vim
 #alias vim '/usr/local/bin/vim'
 
 # lets save 2 keystrokes
