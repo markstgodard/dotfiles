@@ -58,17 +58,8 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-export PGHOST=localhost
-
+# travis
 [ -f /Users/mark/.travis/travis.sh ] && source /Users/mark/.travis/travis.sh
 
 # Always work in a tmux session if tmux is installed
@@ -79,8 +70,6 @@ export PGHOST=localhost
 #fi
 
 
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/Development/go
 
 export GRADLE_HOME=/Users/mark/Development/tools/gradle-2.1
 export PATH=$GRADLE_HOME/bin:$PATH
@@ -111,6 +100,7 @@ alias got="git"
 # RVM
 source ~/.profile
 
+# Node
 export NVM_DIR="/Users/mark/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
@@ -123,10 +113,13 @@ export DOCKER_TLS_VERIFY=1
 
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
+# go
+export GOROOT=/usr/local/go
 export GOPATH=~/Development/platform-enhancement/workspace
 export PATH=$GOPATH/bin:$PATH
 
-
+# postgres
+export PGHOST=localhost
 export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
 
 export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
