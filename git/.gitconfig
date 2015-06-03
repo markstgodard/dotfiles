@@ -1,0 +1,36 @@
+[user]
+	name = Mark St.Godard
+	email = markstgodard@gmail.com
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
+[color "branch"]
+  current = yellow reverse
+  local   = yellow
+  remote  = green
+[color "diff"]
+  meta = blue
+  frag = magenta
+  old  = red
+  new  = green
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = blue
+[alias]
+	lol = log --pretty=oneline --abbrev-commit --graph --decorate
+	l = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	yolo = push origin master
+	unstage = reset HEAD --
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
