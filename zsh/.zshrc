@@ -62,31 +62,21 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # travis
 [ -f /Users/mark/.travis/travis.sh ] && source /Users/mark/.travis/travis.sh
 
-# Always work in a tmux session if tmux is installed
-#if which tmux 2>&1 >/dev/null; then
-# if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
-#       tmux attach -t hack || tmux new -s hack; exit
-#    fi
-#fi
 
-
-
+# Gradle
 export GRADLE_HOME=/Users/mark/Development/tools/gradle-2.1
 export PATH=$GRADLE_HOME/bin:$PATH
 
-
+# Ant
 export ANT_HOME=~/Development/tools/apache-ant-1.9.4
-export MAVEN_HOME=~/Development/tools/apache-maven-3.2.3
 
+# Maven
+export MAVEN_HOME=~/Development/tools/apache-maven-3.2.3
 export PATH=$PATH:/usr/local/sbin:$ANT_HOME/bin:$MAVEN_HOME/bin:/usr/local/bin
 
-
+# Oracle?
 export DYLD_LIBRARY_PATH=/Users/mark/Development/tools/instantclient_11_2
 
-
-# after yosemite upgrade aliased to mvim -v ????
-# unalias vim
-#alias vim '/usr/local/bin/vim'
 
 # lets save 2 keystrokes
 alias v="vim"
@@ -101,7 +91,7 @@ alias got="git"
 source ~/.profile
 
 # Node
-export NVM_DIR="/Users/mark/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
