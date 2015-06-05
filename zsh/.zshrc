@@ -59,9 +59,9 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 
+# START build.zsh
 # travis
 [ -f /Users/mark/.travis/travis.sh ] && source /Users/mark/.travis/travis.sh
-
 
 # Gradle
 export GRADLE_HOME=/Users/mark/Development/tools/gradle-2.1
@@ -73,6 +73,8 @@ export ANT_HOME=~/Development/tools/apache-ant-1.9.4
 # Maven
 export MAVEN_HOME=~/Development/tools/apache-maven-3.2.3
 export PATH=$PATH:/usr/local/sbin:$ANT_HOME/bin:$MAVEN_HOME/bin:/usr/local/bin
+
+# END build.zsh
 
 # Oracle?
 export DYLD_LIBRARY_PATH=/Users/mark/Development/tools/instantclient_11_2
