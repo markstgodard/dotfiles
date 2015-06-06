@@ -39,11 +39,6 @@ DISABLE_AUTO_TITLE="true"
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
-
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
@@ -79,6 +74,9 @@ export PATH=$PATH:/usr/local/sbin:$ANT_HOME/bin:$MAVEN_HOME/bin:/usr/local/bin
 # Oracle?
 export DYLD_LIBRARY_PATH=/Users/mark/Development/tools/instantclient_11_2
 
+# postgres
+export PGHOST=localhost
+export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
 
 # lets save 2 keystrokes
 alias v="vim"
@@ -110,8 +108,5 @@ export GOROOT=/usr/local/go
 export GOPATH=~/Development/platform-enhancement/workspace
 export PATH=$GOPATH/bin:$PATH
 
-# postgres
-export PGHOST=localhost
-export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
 
 export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
