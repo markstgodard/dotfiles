@@ -74,9 +74,11 @@ export PATH=$PATH:/usr/local/sbin:$ANT_HOME/bin:$MAVEN_HOME/bin:/usr/local/bin
 # Oracle?
 export DYLD_LIBRARY_PATH=/Users/mark/Development/tools/instantclient_11_2
 
+# moved to postgres.zsh
 # postgres
 export PGHOST=localhost
 export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
+# moved to postgres.zsh
 
 # lets save 2 keystrokes
 alias v="vim"
