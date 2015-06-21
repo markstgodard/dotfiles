@@ -92,11 +92,6 @@ alias got="git"
 # RVM
 source ~/.profile
 
-# Node
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-
 export EDITOR='vim'
 
 # as per IBM Constainers documentation
