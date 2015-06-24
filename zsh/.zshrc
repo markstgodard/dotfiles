@@ -89,6 +89,9 @@ alias h="history"
 alias gut="git"
 alias got="git"
 
+# fasd
+eval "$(fasd --init auto)"
+
 # RVM
 source ~/.profile
 
@@ -102,7 +105,7 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # go
 export GOROOT=/usr/local/go
-export GOPATH=~/Development/platform-enhancement/workspace
+export GOPATH=~/Development/gorouter
 export PATH=$GOPATH/bin:$PATH
 
 
