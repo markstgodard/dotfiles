@@ -12,11 +12,11 @@ set ts=2                          " set indent to 2 spaces
 set shiftwidth=2
 set expandtab                     " use spaces, not tab characters
 set nocompatible                  " don't need to be compatible with old vim
-" MJS temp disable when pairing
-set relativenumber                " show relative line numbers
-" set number
+" MJS disable when pairing
+" set relativenumber                " show relative line numbers
+set number
 
-" MJS another hack since 
+" MJS another hack since
 " http://stackoverflow.com/questions/9853584/how-to-use-correct-ruby-in-vim-how-to-modify-path-in-vim/12146694#12146694
 set shell=/bin/bash
 

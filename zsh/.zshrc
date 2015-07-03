@@ -105,7 +105,7 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # go
 export GOROOT=/usr/local/go
-export GOPATH=~/Development/gorouter
+export GOPATH=~/workspace/go
 export PATH=$GOPATH/bin:$PATH
 
 
