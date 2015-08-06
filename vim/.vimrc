@@ -111,6 +111,7 @@ map <leader>a :Ag!<space>
 
 " clear the command line and search highlighting
 noremap <C-l> :nohlsearch<CR>
+nnoremap <silent> <space> :nohlsearch<CR>
 
 " toggle spell check with <F5>
 map <F5> :setlocal spell! spelllang=en_us<cr>
