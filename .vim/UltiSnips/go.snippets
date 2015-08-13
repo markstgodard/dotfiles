@@ -1,0 +1,17 @@
+snippet desc "Describe"
+var _ = Describe("${1:description}", func() {
+	$0
+})
+endsnippet
+
+snippet cont "Context"
+Context("${1:description}", func() {
+	${0:${VISUAL}}
+})
+endsnippet
+
+snippet it "It"
+It("${1:description}", func() {
+	${0:${VISUAL}}
+})
+endsnippet
