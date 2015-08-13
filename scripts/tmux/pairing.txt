@@ -1,0 +1,12 @@
+# on host primary
+
+tmux -S /tmp/shareds new -s PAIR
+
+chgrp staff /tmp/shareds
+
+
+# on the pair...
+
+ssh pair@9.x.x.x
+
+tmux -S /tmp/shareds attach -t PAIR

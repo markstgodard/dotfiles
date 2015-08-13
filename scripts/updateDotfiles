@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+cd ~
+
+echo "==> Updating all the things..."
+
+echo "  > Pulling master for all vim submodules..."
+cd ~
+git submodule foreach git pull origin master &> /dev/null
+
+echo "==> Done updating."
+cd ~
+git status -s -b
