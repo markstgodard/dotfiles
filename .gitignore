@@ -44,7 +44,6 @@
 .node-gyp
 .npm
 .nvm
-.oh-my-zsh
 .pairs
 .ports.json
 .profile
