@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/mark/temp/codi/env'
+let g:netrw_dirhist_2='/Users/mark/temp/codi/test/integration-test'
+let g:netrw_dirhist_3='/Users/mark/.oh-my-zsh'
+let g:netrw_dirhist_4='/Users/mark/temp/QX'
+let g:netrw_dirhist_5='/Users/mark/Development/platform-enhancement/workspace/src/github.com/cloudfoundry/cli/cf/app'
+let g:netrw_dirhist_6='/Users/mark/Development/platform-enhancement/set/myset/lib/myset'
+let g:netrw_dirhist_7='/Users/mark/Development/dotfiles'
+let g:netrw_dirhist_8='/Users/mark/Development'
+let g:netrw_dirhist_9='/Users/mark/scripts'
