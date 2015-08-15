@@ -26,7 +26,7 @@ DISABLE_AUTO_TITLE="true"
 # DISABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-#COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -38,44 +38,9 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
+# Add usr local bin
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-
-# START build.zsh
-# travis
-[ -f /Users/mark/.travis/travis.sh ] && source /Users/mark/.travis/travis.sh
-
-# Gradle
-export GRADLE_HOME=/Users/mark/Development/tools/gradle-2.1
-export PATH=$GRADLE_HOME/bin:$PATH
-
-# Ant
-export ANT_HOME=~/Development/tools/apache-ant-1.9.4
-
-# Maven
-export MAVEN_HOME=~/Development/tools/apache-maven-3.2.3
-export PATH=$PATH:/usr/local/sbin:$ANT_HOME/bin:$MAVEN_HOME/bin:/usr/local/bin
-
-# Oracle?
-export DYLD_LIBRARY_PATH=/Users/mark/Development/tools/instantclient_11_2
-
-# postgres
-export PGHOST=localhost
-export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
-
-# lets save 2 keystrokes
-alias v="vim"
-alias cls="clear"
-alias h="history"
-
-# why not at this point
-alias gut="git"
-alias got="git"
-
-# CF aliases
-alias dammit='bosh create release --force && bosh target 192.168.50.4 lite && ./bosh-lite/make_manifest && bosh -n upload release && bosh -n deploy'
 
 # fasd
 eval "$(fasd --init auto)"
@@ -83,18 +48,8 @@ eval "$(fasd --init auto)"
 # RVM
 source ~/.profile
 
+# editor
 export EDITOR='vim'
 
-# as per IBM Constainers documentation
+# Docker
 export DOCKER_TLS_VERIFY=1
-
-
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
-
-# go
-export GOROOT=/usr/local/go
-export GOPATH=~/workspace/go
-export PATH=$GOPATH/bin:$PATH
-
-
-export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
