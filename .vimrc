@@ -113,9 +113,9 @@ map <leader>a :Ag!<space>
 noremap <C-l> :nohlsearch<CR>
 nnoremap <silent> <space> :nohlsearch<CR>
 
-" toggle spell check with <F5>
-map <F5> :setlocal spell! spelllang=en_us<cr>
-imap <F5> <ESC>:setlocal spell! spelllang=en_us<cr>
+" toggle spell check with <F7>
+map <F7> :setlocal spell! spelllang=en_us<cr>
+imap <F7> <ESC>:setlocal spell! spelllang=en_us<cr>
 
 " add :Plain command for converting text to plaintext
 command! Plain execute "%s/’/'/ge | %s/[“”]/\"/ge | %s/—/-/ge"
