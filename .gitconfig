@@ -24,6 +24,7 @@
 [alias]
 	lol = log --pretty=oneline --abbrev-commit --graph --decorate
 	l = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short
+	lg = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short
 	st = status
 	ci = commit
 	co = checkout
