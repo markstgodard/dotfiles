@@ -34,7 +34,7 @@ DISABLE_AUTO_TITLE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git ruby rails)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -51,5 +51,3 @@ source ~/.profile
 # editor
 export EDITOR='vim'
 
-# Docker
-export DOCKER_TLS_VERIFY=1
