@@ -38,15 +38,8 @@ plugins=(git ruby rails)
 
 source $ZSH/oh-my-zsh.sh
 
-# Add usr local bin
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-
 # fasd
 eval "$(fasd --init auto)"
-
-# RVM
-source ~/.profile
 
 # editor
 export EDITOR='vim'
