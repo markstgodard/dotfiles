@@ -14,7 +14,6 @@ set expandtab                     " use spaces, not tab characters
 set nocompatible                  " don't need to be compatible with old vim
 
 set relativenumber                " show relative line numbers
-" set number
 
 " MJS another hack since
 " http://stackoverflow.com/questions/9853584/how-to-use-correct-ruby-in-vim-how-to-modify-path-in-vim/12146694#12146694
