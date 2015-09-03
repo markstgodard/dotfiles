@@ -41,6 +41,9 @@ source $ZSH/oh-my-zsh.sh
 # fasd
 eval "$(fasd --init auto)"
 
+# add dirvenv hook
+eval "$(direnv hook zsh)"
+
 # editor
 export EDITOR='vim'
 
