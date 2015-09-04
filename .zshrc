@@ -47,3 +47,9 @@ eval "$(direnv hook zsh)"
 # editor
 export EDITOR='vim'
 
+# chruby
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+RUBIES+=(~/.rvm/rubies/*)
+source /usr/local/opt/chruby/share/chruby/auto.sh
+
+
