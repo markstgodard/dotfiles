@@ -52,4 +52,5 @@ source /usr/local/opt/chruby/share/chruby/chruby.sh
 RUBIES+=(~/.rvm/rubies/*)
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
-
+# ignore history
+export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help:pony:pony *";
