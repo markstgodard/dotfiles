@@ -1,5 +1,6 @@
 .bosh
 .docker
+.flyrc
 .vim/.netrwhist
 .CFUserTextEncoding
 .MCTranscodingSDK
