@@ -61,3 +61,6 @@
 [submodule ".vim/bundle/vim-unimpaired"]
 	path = .vim/bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule ".vim/bundle/ycm"]
+	path = .vim/bundle/ycm
+	url = https://github.com/Valloric/YouCompleteMe.git
