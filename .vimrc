@@ -12,6 +12,9 @@ set ts=2                          " set indent to 2 spaces
 set shiftwidth=2
 set expandtab                     " use spaces, not tab characters
 set nocompatible                  " don't need to be compatible with old vim
+if has("autocmd")
+  filetype indent plugin on
+endif
 
 set relativenumber                " show relative line numbers
 
