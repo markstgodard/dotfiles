@@ -73,3 +73,6 @@
 [submodule ".vim/bundle/vipe"]
 	path = .vim/bundle/vipe
 	url = https://github.com/luan/vipe.git
+[submodule "/Users/mark/.fzf"]
+	path = /Users/mark/.fzf
+	url = https://github.com/junegunn/fzf.git

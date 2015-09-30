@@ -1,5 +1,4 @@
 .bosh
-.fzf
 .docker
 .flyrc
 .vim/.netrwhist
