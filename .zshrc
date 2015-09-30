@@ -45,3 +45,5 @@ source /usr/local/opt/chruby/share/chruby/auto.sh
 
 # ignore specific commands in history
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help:pony:pony *";
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
