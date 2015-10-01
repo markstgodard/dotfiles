@@ -1,5 +1,6 @@
 .bosh
 .docker
+tags
 .flyrc
 .vim/.netrwhist
 .CFUserTextEncoding
