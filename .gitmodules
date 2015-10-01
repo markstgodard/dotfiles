@@ -76,3 +76,6 @@
 [submodule "/Users/mark/.fzf"]
 	path = /Users/mark/.fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule ".vim/bundle/vim-emoji"]
+	path = .vim/bundle/vim-emoji
+	url = https://github.com/junegunn/vim-emoji.git
