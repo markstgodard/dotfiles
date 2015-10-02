@@ -1,4 +1,5 @@
 *.orig
+*.log
 *.swo
 *.swp
 *~
