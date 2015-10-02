@@ -3,6 +3,7 @@
 doc/tags
 *local.sh
 .*.log
+*crap*
 .flyrc
 .vim/.netrwhist
 .CFUserTextEncoding
