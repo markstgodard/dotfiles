@@ -1,6 +1,7 @@
 .bosh
 .docker
 doc/tags
+*local.sh
 .flyrc
 .vim/.netrwhist
 .CFUserTextEncoding
