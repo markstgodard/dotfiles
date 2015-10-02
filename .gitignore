@@ -2,6 +2,7 @@
 .docker
 doc/tags
 *local.sh
+.*.log
 .flyrc
 .vim/.netrwhist
 .CFUserTextEncoding
