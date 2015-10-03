@@ -5,6 +5,7 @@ doc/tags
 .*.log
 *crap*
 .flyrc
+*.swp
 .vim/.netrwhist
 .CFUserTextEncoding
 .MCTranscodingSDK
