@@ -111,7 +111,8 @@ silent! if emoji#available()
   endfunction
 
   hi def link User1 TablineFill
-  let s:cherry = emoji#for('cherry_blossom')
+  "let s:cherry = emoji#for('cherry_blossom')
+  let s:cherry = emoji#for('coffee')
   function! MyStatusLine()
     let mod = '%{S_modified()}'
     let ro  = "%{&readonly ? emoji#for('lock') . ' ' : ''}"
