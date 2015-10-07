@@ -295,7 +295,7 @@ endfunction
 map <leader>t :call RunTestFile()<cr>
 map <leader>T :call RunNearestTest()<cr>
 
-" MJS specifics
+" OCD remove trailing spaces
 noremap <F5> :%s/\s\+$//e<CR>
 
 " force me to use h j k l
