@@ -41,3 +41,5 @@
 	required = true
 [push]
 	default = simple
+[core]
+	editor = vim
