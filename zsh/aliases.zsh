@@ -5,6 +5,4 @@ alias cls="clear"
 alias h="history"
 
 #  Cloud Foundry
-alias dammit='bosh create release --force && ./scripts/generate-bosh-lite-dev-manifest && bosh -n upload release && bosh -n deploy'
-
-alias cfup='cd ~/workspace/bosh-lite && vagrant up && cd -'
+alias dammit='bosh create release --force && bosh target lite && ./scripts/generate-bosh-lite-dev-manifest && bosh -n upload release && bosh -n deploy'
