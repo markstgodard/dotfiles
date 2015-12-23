@@ -7,4 +7,4 @@ alias h="history"
 alias ginko="ginkgo"
 
 # Cloud Foundry
-alias cloud='bosh create release --force && bosh target lite && ./scripts/generate-bosh-lite-dev-manifest && bosh -n upload release && bosh -n deploy'
+alias dammit='bosh create release --force && bosh target lite && ./scripts/generate-bosh-lite-dev-manifest && bosh -n upload release && bosh -n deploy'
