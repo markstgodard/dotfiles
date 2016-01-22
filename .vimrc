@@ -302,11 +302,12 @@ map <leader>T :call RunNearestTest()<cr>
 " OCD remove trailing spaces
 noremap <F5> :%s/\s\+$//e<CR>
 
+" disabling as causes issues if pairing
 " force me to use h j k l
-noremap <Up>  <Nop>
-noremap <Down>  <Nop>
-noremap <Left>  <Nop>
-noremap <Right>  <Nop>
+" noremap <Up>  <Nop>
+" noremap <Down>  <Nop>
+" noremap <Left>  <Nop>
+" noremap <Right>  <Nop>
 
 
 " YouCompleteMe and UltiSnips compatibility, with the helper of supertab
