@@ -1,6 +1,6 @@
 # My dot files
 
-![dotfiles](http://gph.is/1O3sBNM "dot files")
+[id]: http://gph.is/1O3sBNM "dot files"
 
 These are my dotfiles. There are many like it, but these are mine.
 
