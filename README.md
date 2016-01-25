@@ -1,7 +1,4 @@
 # My dot files
-
-[](http://gph.is/1O3sBNM)
-
 These are my dotfiles. There are many like it, but these are mine.
 
 Actually these are my personal dot files for Vim, Tmux, Git and zsh
