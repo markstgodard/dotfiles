@@ -6,11 +6,7 @@
 #[ -f /Users/mark/.travis/travis.sh ] && source /Users/mark/.travis/travis.sh
 
 # Java home
-#export JAVA_HOME=$(/usr/libexec/java_home)
-
-# Gradle
-# export GRADLE_HOME=/Users/mark/Development/tools/gradle-2.1
-# export PATH=$GRADLE_HOME/bin:$PATH
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Ant
 # export ANT_HOME=~/Development/tools/apache-ant-1.9.4
