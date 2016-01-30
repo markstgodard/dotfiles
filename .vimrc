@@ -326,3 +326,16 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " fzf
 set rtp+=~/.fzf
+
+" Taken from Luan's since its the Pivotal standard
+" https://github.com/luan/vimfiles/blob/master/config/plugin/NERDTree.vim
+" ---------------
+" NERDTree
+" ---------------
+nnoremap <leader>nn :NERDTreeToggle<CR>
+nnoremap \ :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
+nnoremap \| :NERDTreeFind<CR>
+let g:NERDTreeShowBookmarks=1
+let g:NERDTreeChDirMode=2 " Change the NERDTree directory to the root node
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
