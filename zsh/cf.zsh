@@ -12,6 +12,6 @@ function cf_bosh_lite {
   if (( $# == 0 ))
     then echo usage: cf_bosh_lite password;
   else
-    cf api api.bosh-lite.com --skip-ssl-validation && cf auth admin $1
+    cf api api.bosh-lite.com --skip-ssl-validation && cf auth admin $1 && cf t -o o -s s
   fi
 }
