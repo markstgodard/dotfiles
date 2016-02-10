@@ -44,3 +44,7 @@
 	default = simple
 [core]
 	editor = vim
+[gitreview]
+	scheme = https
+	port = 443
+	username = markstgodard
