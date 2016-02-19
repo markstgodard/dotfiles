@@ -1,4 +1,5 @@
 .bosh
+.vim/view
 .docker
 doc/tags
 *local.sh
