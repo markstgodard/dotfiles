@@ -17,6 +17,7 @@ if has("autocmd")
 endif
 
 set relativenumber                " show relative line numbers
+set number                        " show current line number
 
 " MJS another hack since
 " http://stackoverflow.com/questions/9853584/how-to-use-correct-ruby-in-vim-how-to-modify-path-in-vim/12146694#12146694
