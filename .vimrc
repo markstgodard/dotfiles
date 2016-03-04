@@ -342,3 +342,6 @@ let g:NERDTreeChDirMode=2 " Change the NERDTree directory to the root node
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 set completeopt-=preview
+
+" allow cursor to select
+set mouse=a
