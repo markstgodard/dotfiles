@@ -1,4 +1,5 @@
 .bosh
+*.private
 .vim/view
 .docker
 doc/tags
