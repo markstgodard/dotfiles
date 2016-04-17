@@ -1,5 +1,4 @@
 # general time savers
-alias v="vim"
 alias vi="vim"
 alias cls="clear"
 alias h="history"
