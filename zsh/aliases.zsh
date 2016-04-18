@@ -13,3 +13,7 @@ alias dammit-diego='cd ~/workspace/diego-release && bosh create release --force 
 alias dammit-routing='cd ~/workspace/cf-routing-release && bosh create release --force && bosh target lite && ./scripts/generate-bosh-lite-manifest && bosh -n upload release && bosh -d ~/workspace/cf-routing-release/bosh-lite/deployments/cf-routing-manifest.yml -n deploy'
 
 alias igiveup='cd ~/workspace/bosh-lite && vagrant halt && vagrant destroy && vagrant up && dammit'
+
+
+# dot files
+alias dots='cd ~/dotfiles && ./scripts/update-dotfiles'
