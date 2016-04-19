@@ -38,12 +38,12 @@ eval "$(direnv hook zsh)"
 # editor
 export EDITOR='vim'
 
-# chruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-RUBIES+=(~/.rvm/rubies/*)
-source /usr/local/opt/chruby/share/chruby/auto.sh
-
 # ignore specific commands in history
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help:pony:pony *";
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+# chruby
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
