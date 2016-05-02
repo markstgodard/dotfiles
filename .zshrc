@@ -90,4 +90,5 @@ eval "$(fasd --init auto)"
 eval "$(direnv hook zsh)"
 
 source /usr/local/share/chruby/chruby.sh
+RUBIES+=(~/.rubies/*)
 source /usr/local/share/chruby/auto.sh
