@@ -92,3 +92,4 @@ eval "$(direnv hook zsh)"
 source /usr/local/share/chruby/chruby.sh
 RUBIES+=(~/.rubies/*)
 source /usr/local/share/chruby/auto.sh
+chruby ruby-2.3.1
