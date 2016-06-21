@@ -31,7 +31,8 @@
 	co = checkout
 	br = branch
 	yolo = push origin master
-	unstage = reset HEAD --
+  unstage = reset HEAD --
+  flog = log --pretty=fuller --decorate
 [filter "media"]
 	required = true
 	clean = git media clean %f
