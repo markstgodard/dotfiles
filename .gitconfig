@@ -1,6 +1,8 @@
 [user]
-	name = Mark St.Godard
-	email = markstgodard@gmail.com
+  name = Mark St.Godard
+  email = markstgodard@gmail.com
+[core]
+  excludesfile = /Users/mark/.global_gitignore
 [color]
   diff = auto
   status = auto
