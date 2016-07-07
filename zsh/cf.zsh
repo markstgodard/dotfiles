@@ -15,3 +15,8 @@ function cf_bosh_lite {
     cf api api.bosh-lite.com --skip-ssl-validation && cf auth admin $1 && cf t -o o -s s
   fi
 }
+
+# create o and s
+function cf_create_org {
+  cf create-org o && cf t -o o && cf create-space s && cf t -o o -s s
+}
