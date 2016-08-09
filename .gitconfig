@@ -51,8 +51,8 @@
 	scheme = https
 	port = 443
 	username = markstgodard
-[duet "env"]
-	git-author-initials = ms
-	git-author-name = Mark St.Godard
-	git-author-email = markstgodard@gmail.com
-	mtime = 1460156654
+[url "git@github.com:"]
+  pushInsteadOf = https://github.com
+[url "git@github.com:"]
+  pushInsteadOf = git://github.com
+
