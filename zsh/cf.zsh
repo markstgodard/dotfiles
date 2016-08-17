@@ -20,3 +20,14 @@ function cf_bosh_lite {
 function cf_create_org {
   cf create-org o && cf t -o o && cf create-space s && cf t -o o -s s
 }
+
+# lazy hack for bosh ssh to c2c envs
+function bosh_ssh_c2c {
+  if (( $# == 0 ))
+    then echo "usage: bosh_ssh_c2c <env> <deployment>"
+  else
+    bosh target bosh.$1.c2c.cf-app.com
+    bosh download manifest $1 /tmp/$1-diego.yml
+    bosh -d /tmp/$1-diego.yml ssh --gateway_host bosh.$1.c2c.cf-app.com --gateway_user vcap --gateway_identity_file ~/workspace/container-networking-deployments/environments/$1/keypair/id_rsa_bosh
+  fi
+}
