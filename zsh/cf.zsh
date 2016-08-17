@@ -23,8 +23,8 @@ function cf_create_org {
 
 # lazy hack for bosh ssh to c2c envs
 function bosh_ssh_c2c {
-  if (( $# == 0 ))
-    then echo "usage: bosh_ssh_c2c <env> <deployment>"
+  if (( $# != 1 ))
+    then echo "Usage: bosh_ssh_c2c <env>"
   else
     bosh target bosh.$1.c2c.cf-app.com
     bosh download manifest $1 /tmp/$1-diego.yml
