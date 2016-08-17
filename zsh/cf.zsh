@@ -27,7 +27,7 @@ function bosh_ssh_c2c {
     then echo "Usage: bosh_ssh_c2c <env>"
   else
     bosh target bosh.$1.c2c.cf-app.com
-    bosh download manifest $1 /tmp/$1-diego.yml
+    bosh download manifest $1-diego /tmp/$1-diego.yml
     bosh -d /tmp/$1-diego.yml ssh --gateway_host bosh.$1.c2c.cf-app.com --gateway_user vcap --gateway_identity_file ~/workspace/container-networking-deployments/environments/$1/keypair/id_rsa_bosh
   fi
 }
