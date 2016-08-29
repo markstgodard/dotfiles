@@ -13,4 +13,6 @@ alias igiveup='cd ~/workspace/bosh-lite && vagrant halt && vagrant destroy && va
 # dot files
 alias dots='cd ~/dotfiles && ./scripts/update-dotfiles'
 
+alias goal='gaol'
+
 #alias rake="noglob rake"
