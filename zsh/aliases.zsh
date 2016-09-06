@@ -15,4 +15,6 @@ alias dots='cd ~/dotfiles && ./scripts/update-dotfiles'
 
 alias goal='gaol'
 
+alias b='bosh'
+
 #alias rake="noglob rake"
