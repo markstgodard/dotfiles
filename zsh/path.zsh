@@ -43,4 +43,4 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/usr/local/Cellar/python/2.7.12/bin:$PATH
 
 # add custom scripts dir to path
-# export PATH=$PATH:~/scripts
+export PATH=$PATH:~/dotfiles/scripts
