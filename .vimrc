@@ -345,3 +345,8 @@ set completeopt-=preview
 
 " allow cursor to select
 set mouse=a
+
+" change the working directory to the directory of the currently open file
+nnoremap ,cd :cd %:p:h<CR>
+" change the working directory only for the current window
+nnoremap ,lcd :lcd %:p:h<CR>
