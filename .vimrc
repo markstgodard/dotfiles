@@ -350,3 +350,6 @@ set mouse=a
 nnoremap ,cd :cd %:p:h<CR>
 " change the working directory only for the current window
 nnoremap ,lcd :lcd %:p:h<CR>
+
+" try FZF vs. ctrlp
+nnoremap <leader>F :FZF<CR>
