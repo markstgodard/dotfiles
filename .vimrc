@@ -172,7 +172,7 @@ set wildignore+=.final_builds/*,*/tmp/*,*/node_modules/*,*.o,*.obj,*.exe,*.so,*.
 let mapleader = ","
 
 " ctrlp config
-let g:ctrlp_map = '<leader>f'
+" let g:ctrlp_map = '<leader>f'
 let g:ctrlp_max_height = 30
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_match_window_reversed = 0
@@ -352,4 +352,4 @@ nnoremap ,cd :cd %:p:h<CR>
 nnoremap ,lcd :lcd %:p:h<CR>
 
 " try FZF vs. ctrlp
-nnoremap <leader>F :FZF<CR>
+nnoremap <leader>f :FZF<CR>
