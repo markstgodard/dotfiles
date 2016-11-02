@@ -35,6 +35,7 @@
 	yolo = push origin master
   unstage = reset HEAD --
   flog = log --pretty=fuller --decorate
+  drb = rebase -i --exec 'git duet-commit --amend --reset-author'
 [filter "media"]
 	required = true
 	clean = git media clean %f
@@ -55,4 +56,3 @@
   pushInsteadOf = https://github.com
 [url "git@github.com:"]
   pushInsteadOf = git://github.com
-
