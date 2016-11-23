@@ -31,3 +31,46 @@ function bosh_ssh_c2c {
     bosh -d /tmp/$1-diego.yml ssh --gateway_host bosh.$1.c2c.cf-app.com --gateway_user vcap --gateway_identity_file ~/workspace/container-networking-deployments/environments/$1/keypair/id_rsa_bosh
   fi
 }
+
+gobosh_target ()
+{
+  env=$1
+  export BOSH_DIR=~/workspace/container-networking-deployments/environments/$env
+
+  pushd $BOSH_DIR 1>/dev/null
+    export BOSH_USER=$(bbl director-username)
+    export BOSH_PASSWORD=$(bbl director-password)
+    export BOSH_ENVIRONMENT=$(bbl director-address)
+    # TODO: remove me after bbl'ing up with bbl 1.2+
+    export BOSH_GW_HOST=$(bbl director-address | cut -d '/' -f 3 | cut -d ':' -f1)
+    export BOSH_KEY=/tmp/$env-ssh-key
+    bbl ssh-key > $BOSH_KEY
+    chmod 600 $BOSH_KEY
+    export BOSH_CA_CERT=/tmp/$env-ca-cert
+    bbl director-ca-cert > $BOSH_CA_CERT
+    chmod 600 $BOSH_CA_CERT
+  popd 1>/dev/null
+
+  export BOSH_DEPLOYMENT=cf;
+}
+
+gobosh_ssh ()
+{
+  if (( $# != 1 ))
+    then echo "Usage: gobosh_ssh <vm-name>"
+  else
+    bosh-cli ssh $1 --gw-private-key=$BOSH_KEY
+  fi
+}
+
+gobosh_build_manifest ()
+{
+  bosh-cli -d cf build-manifest -l=$BOSH_DIR/deployment-env-vars.yml --var-errs ~/workspace/cf-deployment/cf-deployment.yml
+}
+
+gobosh_patch_manifest ()
+{
+  pushd ~/workspace/cf-deployment 1>/dev/null
+    git apply ../container-networking-ci/netman-cf-deployment.patch
+  popd 1>/dev/null
+}
