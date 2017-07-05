@@ -24,34 +24,33 @@
   changed = green
   untracked = blue
 [alias]
-	lol = log --pretty=oneline --abbrev-commit --graph --decorate
-	l = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short
-	lg = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short
-	st = status
-	ci = commit
-	dci = duet-commit
-	co = checkout
-	br = branch
-	yolo = push origin master
+  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  l = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short
+  lg = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short
+  st = status
+  ci = commit
+  dci = duet-commit
+  co = checkout
+  br = branch
   unstage = reset HEAD --
   flog = log --pretty=fuller --decorate
   drb = rebase -i --exec 'git duet-commit --amend --reset-author'
 [filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
 [filter "lfs"]
-	clean = git lfs clean %f
-	smudge = git lfs smudge %f
-	required = true
+  clean = git lfs clean %f
+  smudge = git lfs smudge %f
+  required = true
 [push]
-	default = simple
+  default = simple
 [core]
-	editor = vim
+  editor = vim
 [gitreview]
-	scheme = https
-	port = 443
-	username = markstgodard
+  scheme = https
+  port = 443
+  username = markstgodard
 [url "git@github.com:"]
   pushInsteadOf = https://github.com
 [url "git@github.com:"]
